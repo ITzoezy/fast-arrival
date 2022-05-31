@@ -11,10 +11,10 @@ spring:
       username: root
       password: 123456
   redis:
-    host: localhost
+    host: 192.168.10.130
     port: 6379
-    #    password: 123456
-    #    database: 0
+    password: 123456
+    database: 0
     #    timeout: 50000
   cache:
     redis:
@@ -30,4 +30,4 @@ mybatis-plus:
       id-type: ASSIGN_ID
 
 fast:
-  path: /home/idea/img
+  path: D:\img\

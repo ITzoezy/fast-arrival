@@ -51,22 +51,22 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     }
 
 
-    @Bean
-    public Docket createRestApi() {
-        // 文档类型
-        return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("com.zy.fastarrival.controller"))
-                .paths(PathSelectors.any())
-                .build();
-    }
-
-    private ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("瑞吉外卖")
-                .version("1.0")
-                .description("瑞吉外卖接口文档")
-                .build();
-    }
+//    @Bean
+//    public Docket createRestApi() {
+//        // 文档类型
+//        return new Docket(DocumentationType.SWAGGER_2)
+//                .apiInfo(apiInfo())
+//                .select()
+//                .apis(RequestHandlerSelectors.basePackage("com.zy.fastarrival.controller"))
+//                .paths(PathSelectors.any())
+//                .build();
+//    }
+//
+//    private ApiInfo apiInfo() {
+//        return new ApiInfoBuilder()
+//                .title("瑞吉外卖")
+//                .version("1.0")
+//                .description("瑞吉外卖接口文档")
+//                .build();
+//    }
 }
